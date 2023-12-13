@@ -1,0 +1,56 @@
+@startuml
+!theme blueprint
+class aplicacion.Main {
+  + main(args: String[]): void
+}
+class dominio.Articulo {
+  - nombrearticulo: String
+  - coste: double
+  - talla: double
+  - codigo: String
+  + getNombrearticulo(): String
+  + setNombrearticulo(nombrearticulo: String): void
+  + getCoste(): double
+  + setCoste(coste: double): void
+  + getTalla(): double
+  + setTalla(talla: double): void
+  + getCodigo(): String
+  + setCodigo(codigo: String): void
+  + toString(): String
+  - validarValorNoNegativo(valor: double, nombre: String): double
+}
+class dominio.Lista {
+  - CATALOG_FILE: String
+  - articulos: ArrayList
+  + agregarArticulo(articulo: Articulo): void
+  + eliminarArticulo(codigo: String): void
+  + listaArticulos(): void
+  + guardarCatalogo(): void
+  + cargarCatalogo(): void
+}
+class interfaz.Interfaz {
+  + scanner: Scanner
+  + listadoArticulos: Lista
+  + iniciar(): void
+}
+
+
+!theme blueprint
+annotation java.lang.SuppressWarnings
+class aplicacion.Main
+class dominio.Articulo
+class dominio.Lista
+class interfaz.Interfaz
+class java.util.ArrayList
+class java.util.Scanner
+class java.util.UUID
+interface dominio.Serializable
+interface java.io.Serializable
+aplicacion.Main ..> interfaz.Interfaz
+dominio.Articulo ..> java.util.UUID
+dominio.Articulo --|> java.io.Serializable
+dominio.Lista ..> java.lang.SuppressWarnings
+dominio.Lista ..> java.util.ArrayList
+dominio.Lista --|> dominio.Serializable
+interfaz.Interfaz ..> java.util.Scanner
+@enduml

@@ -13,3 +13,10 @@ javadoc:
 run:
 	java -jar $(fichJar)
 completo:jar javadoc run
+
+primera: 
+	mkdir bin
+	find src -name "*.java" | xargs javac -d bin
+	jar -cvfm $(fichJar) Manifest.txt -C bin .
+	find $(SOURCE_DIR) -name "*.java" | xargs javadoc -d doc/javadoc
+	completo
