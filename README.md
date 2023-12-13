@@ -62,3 +62,16 @@ El proyecto incluye un Makefile para facilitar la compilación, ejecución y gen
 - `make completo`: Realiza la compilación, generación de Javadoc y ejecución en un solo paso.
 
 Para utilizar el Makefile, asegúrate de tener el comando `make` instalado y ejecuta los comandos desde la terminal.
+
+## UML
+![Diagrama](https://github.com/Alonsogarciavallejo/PracticaCatalogo/assets/119308526/417992e9-77cf-441c-a5cb-bd1f8af2ed03)
+
+Los diagramas UML que visualiza en este programa se generan automáticamente a partir de los archivos .java y no han sido revisados manualmente. Por lo tanto, tenga en cuenta lo siguiente:
+
+1. Los diagramas UML se generan con fines ilustrativos y pueden contener errores, omisiones o representaciones incompletas de la estructura y relaciones del sistema.
+
+2. La precisión de la información en los diagramas UML depende de la exactitud de los datos de entrada y la implementación del programa. Pueden producirse discrepancias entre la realidad y los diagramas generados.
+
+3. Se recomienda utilizar los diagramas UML como una referencia inicial y no como la única fuente de información sobre la arquitectura del sistema.
+
+Estos diagramas UML son proporcionados "tal cual" y no se garantiza su exactitud o idoneidad para ningún propósito específico. El uso de esta información está bajo su propia responsabilidad.
